@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <script src="jquery-3.6.4.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -58,8 +58,8 @@
         </div>
         <div class="circle"></div>
         <div class="content">
-          <h3><span>NGUYỄN THẠCH</span> THOẠI NHƯ</h3>
-          <p>FRONT END DEVELOPER.</p>
+          <h3 class="wow animate__fadeInDown"><span>NGUYỄN THẠCH</span> THOẠI NHƯ</h3>
+          <p class="wow animate__fadeInDown">UI/UX DESIGNER - FRONT END DEVELOPER.</p>
         </div>
         <div class="boxScroll" href="#myInformation">
           <div class="box">
@@ -157,41 +157,63 @@
           </div>
         </div>
       </div>
-      <div class="project" id="project">
-        <div class="pjItem">
-          <a href="https://thoainhu.github.io/final-VietnamSafari/index.html">
-            <div class="pjImg">
-              <img src="image/pj1.png" alt="" />
+      <div class="myProject">
+        <div class="project" id="project">
+          <div class="pjItem">
+            <a href="https://thoainhu.github.io/final-VietnamSafari/index.html">
+              <div class="pjImg">
+                <img src="image/pj1.png" alt="" />
+              </div>
+            </a>
+            <div class="title">
+              <h1>Vietnam Safari</h1>
+              <p>Web Development</p>
+              <a href="https://thoainhu.github.io/final-VietnamSafari/index.html">Show project</a>
             </div>
-          </a>
-          <div class="title">
-            <h1>Vietnam Safari</h1>
-            <p>Web Development</p>
-            <a href="https://thoainhu.github.io/final-VietnamSafari/index.html">Show project</a>
+          </div>
+          <div class="pjItem">
+            <a href="https://thoainhu.github.io/bootstrap_Ourfarm/">
+              <div class="pjImg">
+                <img src="image/pj3.png" alt="" />
+              </div>
+            </a>
+            <div class="title">
+              <h1>Ourfarm</h1>
+              <p>Landing Pages</p>
+              <a href="https://thoainhu.github.io/bootstrap_Ourfarm/">Show project</a>
+            </div>
+          </div>
+          <div class="pjItem">
+            <a href="https://thoainhu.github.io/landingpage_flacio/">
+              <div class="pjImg">
+                <img src="image/pj2.png" alt="" />
+              </div>
+            </a>
+            <div class="title">
+              <h1>flacio</h1>
+              <p>Landing Pages</p>
+              <a href="https://thoainhu.github.io/landingpage_flacio/">Show project</a>
+            </div>
           </div>
         </div>
-        <div class="pjItem">
-          <a href="https://thoainhu.github.io/bootstrap_Ourfarm/">
-            <div class="pjImg">
-              <img src="image/pj3.png" alt="" />
+        <div class="project2">
+          <div class="pjTravel">
+            <a class="picLink" href="https://thoainhu.github.io/travel-homepage/">
+              <div class="pjImg">
+                <div class="pic active">
+                  <img src="image/travel1.jpg" alt="" />
+                </div>
+                <div class="pic"><img src="image/travel2.jpg" alt="" /></div>
+                <div class="pic"><img src="image/travel3.jpg" alt="" /></div>
+                <div class="pic"><img src="image/travel4.jpg" alt="" /></div>
+                <div class="pic"><img src="image/travel5.jpg" alt="" /></div>
+              </div>
+            </a>
+            <div class="title">
+              <h1>travel</h1>
+              <p>Home page</p>
+              <a href="https://thoainhu.github.io/travel-homepage/">Show project</a>
             </div>
-          </a>
-          <div class="title">
-            <h1>Ourfarm</h1>
-            <p>Landing Pages</p>
-            <a href="https://thoainhu.github.io/bootstrap_Ourfarm/">Show project</a>
-          </div>
-        </div>
-        <div class="pjItem">
-          <a href="https://thoainhu.github.io/landingpage_flacio/">
-            <div class="pjImg">
-              <img src="image/pj2.png" alt="" />
-            </div>
-          </a>
-          <div class="title">
-            <h1>flacio</h1>
-            <p>Landing Pages</p>
-            <a href="https://thoainhu.github.io/landingpage_flacio/">Show project</a>
           </div>
         </div>
       </div>
@@ -210,11 +232,12 @@
             <p class="locate"><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</p>
             <p class="info">Learned the basics of website principles on Figma as well as how to deploy a website using Frontend proficiency.</p>
             <div class="tools">
+              <div class="toolItem"><p>UI/UX</p></div>
+              <div class="toolItem"><p>Figma</p></div>
               <div class="toolItem"><p>HTML</p></div>
               <div class="toolItem"><p>CSS</p></div>
               <div class="toolItem"><p>JavaScript</p></div>
               <div class="toolItem"><p>jQuery</p></div>
-              <div class="toolItem"><p>Figma</p></div>
             </div>
           </div>
         </div>
@@ -256,7 +279,12 @@
         <p class="myPhone"><span>096.2309.213</span></p>
       </div>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>

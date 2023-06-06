@@ -48,3 +48,10 @@ barMenu.addEventListener("click", function () {
   barMenu.classList.toggle("active");
   menubarClick.classList.toggle("active");
 });
+let changeImgPj = document.querySelectorAll(".pjTravel .picLink .pjImg .pic");
+let currentIndex = 0;
+setInterval(() => {
+  changeImgPj[currentIndex].classList.remove("active");
+  currentIndex = (currentIndex + 1) % changeImgPj.length;
+  changeImgPj[currentIndex].classList.add("active");
+}, 2000);

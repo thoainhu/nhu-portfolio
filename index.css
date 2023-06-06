@@ -165,11 +165,23 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  animation: name 1s linear;
 }
 .banner .content h3 {
   font-size: 90px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+}
+
+@keyframes name {
+  0% {
+    top: 40%;
+    opacity: 0.5;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
 }
 .banner .content p {
   font-size: 30px;
@@ -416,14 +428,17 @@ a {
 .overview .avatar .image img {
   width: 100%;
 }
+.myProject {
+  height: auto;
+}
 .project {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   width: 70%;
   margin: 100px auto;
-  justify-content: space-between;
 }
 .project .pjItem {
-  width: 32%;
   border-radius: 5px;
   overflow: hidden;
   background-color: #12131b;
@@ -488,6 +503,99 @@ a {
   visibility: hidden;
 }
 .project .pjItem:hover .title a {
+  bottom: 15%;
+  opacity: 1;
+  visibility: visible;
+}
+.project .pjImg {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+}
+.project2 {
+  margin: 10px auto;
+}
+.pjTravel {
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  background-color: #12131b;
+}
+.pjTravel .picLink {
+  width: 70%;
+  overflow: hidden;
+  height: 500px;
+}
+.pjTravel .title {
+  width: 30%;
+}
+.pjTravel .picLink .pjImg {
+  width: 100%;
+  position: relative;
+}
+.pjTravel .picLink .pjImg .pic {
+  padding: 20px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.pjTravel .picLink .pjImg .pic.active {
+  opacity: 1;
+}
+.pjTravel .picLink .pjImg .pic img {
+  width: 100%;
+}
+.project2 .pjTravel .title {
+  padding: 30px 50px;
+  height: 120px;
+  position: relative;
+}
+.project2 .pjTravel .title h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 5px;
+}
+.project2 .pjTravel .title p {
+  color: rgb(211, 210, 210);
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 15%;
+  visibility: visible;
+  transition: 0.5s;
+}
+.project2 .pjTravel .title a {
+  color: rgb(211, 210, 210);
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.project2 .pjTravel .title a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: rgb(211, 210, 210);
+  bottom: 5px;
+  left: 110%;
+}
+.project2 .pjTravel .title a:hover {
+  color: #2f7c8a;
+}
+.project2 .pjIpjTraveltem:hover .pjImg img {
+  transform: scale(1.1);
+}
+.project2 .pjTravel:hover .title p {
+  bottom: 30%;
+  opacity: 0;
+  visibility: hidden;
+}
+.project2 .pjTravel:hover .title a {
   bottom: 15%;
   opacity: 1;
   visibility: visible;
