@@ -519,6 +519,7 @@ a {
   width: 70%;
   margin: 10px auto;
   display: flex;
+
   background-color: #12131b;
 }
 .pjTravel .picLink {
@@ -534,7 +535,6 @@ a {
   position: relative;
 }
 .pjTravel .picLink .pjImg .pic {
-  padding: 20px;
   position: absolute;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -868,10 +868,25 @@ a {
   }
   .project {
     display: block;
+    margin-bottom: 10px;
   }
   .project .pjItem {
     width: 70%;
     margin: 20px auto;
+  }
+  .project2 {
+    margin-top: 10px;
+  }
+  .pjTravel {
+    width: 63%;
+    flex-direction: column;
+  }
+  .pjTravel .picLink {
+    width: 100%;
+    height: 230px;
+  }
+  .project2 .pjTravel .title {
+    width: 100%;
   }
   .sessionTitle {
     font-size: 60px;
@@ -1046,5 +1061,17 @@ a {
   }
   .sessionTitle {
     font-size: 30px;
+  }
+  .banner .name {
+    left: 26px;
+  }
+  .banner .name h4 {
+    font-size: 30px;
+  }
+  .header-wrap .header .barMenu {
+    right: 26px;
+  }
+  .header-wrap .header .menu {
+    right: 26px;
   }
 }
